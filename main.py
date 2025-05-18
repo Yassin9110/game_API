@@ -259,4 +259,5 @@ def reply(input: DialogueInput):
 @app.post("/analyze")
 def analyze(request: AnalyzeRequest):
     result = analyze_reply(request.sis_line, request.player_reply)
+    
     return result
